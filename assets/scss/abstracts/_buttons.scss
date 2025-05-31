@@ -1,0 +1,42 @@
+
+.primary-btn{
+        margin: 1rem;
+        background-color: var(--light-blue-color);
+        width: 268px;
+        height: 72px;
+        color: var(--purple-color);
+        font-family: var(--font-secondary);
+        font-size: 2.4rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: var(--purple-color);
+          color: var(--light-blue-color);
+        }
+    
+}
+
+.secondary-btn{
+        margin: 1rem;
+        background-color: var(--yellow-color);
+        width: 268px;
+        height: 72px;
+        color: var(--purple-color);
+        font-family: var(--font-secondary);
+        font-size: 2.4rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          background-color: var(--purple-color);
+          color: var(--yellow-color);
+        }
+    
+}

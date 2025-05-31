@@ -1,0 +1,79 @@
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+@use "abstracts/buttons" as *;
+
+
+.header{
+    background-color: var(--primary-color);
+ 
+}
+
+.header-container {
+  display: flex;
+  padding: 2rem 0rem;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+   &__logo{
+    width: 60%;
+
+  }
+  &__main-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+      .nav-menu li {
+        margin: .5rem;
+        list-style: none;
+      }
+        .nav-menu  li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: var(--font-primary);
+            font-size: 1.6rem;
+            padding: 1rem 0rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover {
+            color: var(--pink-color);
+            transform: scale(1.1);
+            
+            }
+      }
+  }
+  @include mq(md) {
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+      &__logo{
+        width: 15%;
+     }
+      &__main-nav{
+        width: 100%;
+        flex-direction: row;
+      }
+       &__main-nav{
+        .nav-menu{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+        }
+        .nav-menu li {
+            margin: 0rem 1rem;
+        }
+    
+       }
+  }
+}

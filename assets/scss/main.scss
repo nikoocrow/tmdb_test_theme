@@ -1,0 +1,73 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/header" as *;
+@use "abstracts/buttons" as *;
+@use "abstracts/footer" as *;
+
+
+
+
+
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 3.4rem;
+  color: var(--primary-color);
+  @include mq(md) {
+    font-size: 5rem;
+  }
+}
+
+
+span{
+  color: var(--pink-color);
+}
+
+.sub-headings{
+  font-family: var(--font-primary);
+  font-size: 2.1rem;
+  color: var(--grey-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+  margin: 2rem;
+}
+
+
+p{
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  line-height: 1.3;
+}
+
+
+
+.main-container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
