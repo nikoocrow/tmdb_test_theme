@@ -8,7 +8,6 @@
 
 <ol>
   <li>Navigate to your WordPress root directory: <code>wp-content/themes</code></li>
-  <li>Create a new folder named <code>tmdb</code></li>
   <li>Clone or download this repository into the folder:</li>
 </ol>
 
