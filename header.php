@@ -18,7 +18,7 @@
                 ?>
                     <div class="site-header-logo">
                         <a href="<?php echo home_url(); ?>">
-                            <img src="<?php echo esc_url($header_logo); ?>" alt="Logo" />
+                            <img src="<?php echo esc_url($header_logo); ?>" width="200" alt="Logo" />
                         </a>
                     </div>
     <?php endif; ?>
