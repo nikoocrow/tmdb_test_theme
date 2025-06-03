@@ -36,6 +36,21 @@
         ?>
        </nav>
     </div>
+    
+        <div class="user-nav">
+            <?php if (is_user_logged_in()): ?>
+                <span>Hi!!!, <?php echo wp_get_current_user()->display_name; ?>!</span>
+                <a href="<?php echo wp_logout_url(home_url()); ?>">Close Session</a>
+            <?php else: ?>
+                <a href="<?php echo home_url('/login'); ?>">Login</a>
+               <a href="<?php echo home_url('/registration'); ?>">sign up</a>
+            <?php endif; ?>
+        </div>
+
+
+
+
+
     </div>
 </header>
     
