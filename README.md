@@ -11,7 +11,7 @@
   <li>Clone or download this repository into the folder:</li>
 </ol>
 
-<pre><code>https://github.com/nikoocrow/tmdb_test_theme.git</code></pre>
+<pre><code>git clone https://github.com/nikoocrow/tmdb_test_theme.git</code></pre>
 
 <ol start="4">
   <li>In your WordPress Admin Panel, go to <strong>Appearance > Themes</strong> and activate the <code>TMDB</code> theme.</li>
